@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://mavikasif.com/</loc></url>
-<url><loc>https://mavikasif.com/page1.html</loc></url>
-<url><loc>https://mavikasif.com/page2.html</loc></url>
-<url><loc>https://mavikasif.com/page3.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>https://mavikasif.com/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://mavikasif.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://mavikasif.com/en/"/><changefreq>monthly</changefreq></url>
+<url><loc>https://mavikasif.com/en/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://mavikasif.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://mavikasif.com/en/"/><changefreq>monthly</changefreq></url>
+<url><loc>https://mavikasif.com/blog/neden-kapadokyada-dugun-dis-cekimi.html</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://mavikasif.com/blog/dugun-fotografcisi-secerken-nelere-dikkat-etmeli.html</loc><changefreq>monthly</changefreq></url>
 </urlset>
