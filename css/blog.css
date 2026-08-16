@@ -4,6 +4,23 @@
 .blog-hero .wrap{padding-bottom:clamp(40px,6vh,72px)}
 .blog-hero .sec-title{margin-bottom:14px}
 
+/* ⚠️ Menu blog sayfalarinda HER ZAMAN koyu-yazi ("scrolled") gorunumunde kalmali.
+   Sebep: .nav'in varsayilan hali BEYAZ yazi — ana sayfadaki koyu hero gorseli icin
+   tasarlanmis. Blog sayfasinda hero yok, zemin krem. JS her scroll'da
+   toggle('scrolled', scrollY>40) calistirdigi icin sayfa basina donunce sinifi
+   SILIYOR ve menu krem zeminde kremlesip kayboluyordu. Sinifa guvenme, CSS ile sabitle. */
+.blog-page .nav{background:rgba(250,247,240,.94);backdrop-filter:blur(12px);
+  box-shadow:0 1px 0 rgba(45,74,158,.12)}
+.blog-page .nav .brand{color:var(--ink)}
+.blog-page .nav .brand span{color:var(--gold)}
+.blog-page .nav .nav-links a{color:var(--ink-soft)}
+.blog-page .nav .nav-links a:hover{color:var(--mavi)}
+.blog-page .nav .nav-cta{color:var(--mavi)!important;border-color:var(--mavi)}
+.blog-page .nav .nav-cta:hover{background:var(--gold);border-color:var(--gold);color:#fff!important}
+.blog-page .nav .burger{color:var(--ink)}
+.blog-page .nav .lang a{border-color:rgba(45,74,158,.4);color:var(--mavi)}
+.blog-page .nav .lang a:hover{background:var(--mavi);border-color:var(--mavi);color:#fff}
+
 /* kirinti + geri donus */
 .crumbs{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
   font-weight:700;margin-bottom:18px}
