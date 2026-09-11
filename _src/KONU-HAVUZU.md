@@ -7,10 +7,10 @@ Kitle: Kapadokya'da **düğün / nişan / save-the-date** dış çekimi planlaya
 - [x] 2026-07-16 — **Neden Kapadokya'da Düğün Dış Çekimi Yaptırmalısınız?** (`neden-kapadokyada-dugun-dis-cekimi`)
 - [x] 2026-07-16 — **Düğün Fotoğrafçısı Seçerken Nelere Dikkat Etmelisiniz?** (`dugun-fotografcisi-secerken-nelere-dikkat-etmeli`)
 - [x] 2026-08-16 — ikisi de **İngilizceye çevrildi**, `/en/blog/` açıldı (yeni yazı değil, mevcutların EN sürümü)
+- [x] 2026-09-11 — **Kapadokya'da Düğün Dış Çekimi İçin Hangi Mevsim? Ay Ay Rehber** (`kapadokyada-dugun-dis-cekimi-icin-en-iyi-mevsim`)
+- [x] 2026-09-11 — **Gelinlikle Kapadokya Dış Çekimi: Pratikte Nasıl Oluyor?** (`gelinlikle-kapadokya-dis-cekimi-nasil-oluyor`)
 
 ## Sırada
-- [ ] **Dış çekim için hangi mevsim? Ay ay Kapadokya** — balon uçuş olasılığı, ışık, kalabalık, kar. Düğün tarihi henüz esnek olan çift için en kritik karar.
-- [ ] **Gelinlikle dış çekim: pratikte nasıl oluyor?** — vadide gelinlikle yürümek, kumaş/toz/rüzgâr gerçeği, yedek ayakkabı, kaç kıyafet götürmeli.
 - [ ] **Nişan & save-the-date çekimi rehberi** — düğünden ne kadar önce, davetiyede nasıl kullanılır, ne giyilir.
 - [ ] **Albümlü Hikâye paketi neden var?** — dijital çağda basılı albüm/poster niye önemli; 30×60 panoramik, 15×30 aile albümü, 50×75 poster gerçekte nasıl duruyor.
 - [ ] **Çekim günü saat saat** — 04:30 otel alımı → hangi vadi → kaç lokasyon → kahvaltıya dönüş. Beklenti yönetimi, "bu kadar erken kalkmaya değer mi" itirazını kırar.

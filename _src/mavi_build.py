@@ -22,7 +22,7 @@ PIN = "https://tr.pinterest.com/mavikasif/"
 T = {
 "tr": {
  "meta_title": "Kapadokya Düğün Fotoğrafçısı — Mavi Kaşif | Karı-Koca Dış Çekim Ekibi",
- "meta_desc": "Kapadokya'da düğün, nişan ve save-the-date dış çekimi. Karı-koca fotoğrafçı ekibi, balonlu gün doğumu çekimleri, albümlü paketler. Tüm fotoğraflar teslim — WhatsApp'tan yazın.",
+ "meta_desc": "Kapadokya'da düğün, nişan ve save-the-date dış çekimi. Karı-koca fotoğrafçı ekibi, balonlu gün doğumu, albümlü paketler. Tüm fotoğraflar teslim.",
  "wa_text": "Merhaba! Kapadokya'da dış çekim için bilgi almak istiyorum.",
  "nav": ["Paketler","Neler Yaşarsınız","Galeri","Yorumlar","Biz Kimiz","S.S.S."],
  "nav_cta": "Tarih Sor",
@@ -39,9 +39,9 @@ T = {
  "pk_popular": "En Çok Tercih Edilen",
  "pk_cta": "Fiyat Al",
  "packs": [
-  {"time":"Gün Doğumu · 2–2,5 saat","name":"Gün Doğumu Çekimi","tag":"Başınızın üstünde yüzlerce balon",
+  {"time":"Gün Doğumu · 1–1,5 saat","name":"Gün Doğumu Çekimi","tag":"Başınızın üstünde yüzlerce balon",
    "feats":["Otel alımı ve tüm transferler dahil","Balonlarla gün doğumu çekimi","En iyi 3 gün doğumu lokasyonu","Poz sınırı yok — tüm fotoğraflar teslim","Seçilen 20 fotoğrafa profesyonel retuş","Instagram reel videosu dahil","Sınırsız kıyafet değişimi"]},
-  {"time":"Gün Batımı · 2–2,5 saat","name":"Gün Batımı Çekimi","tag":"Vadilerin üzerinde altın saat",
+  {"time":"Gün Batımı · 1–1,5 saat","name":"Gün Batımı Çekimi","tag":"Vadilerin üzerinde altın saat",
    "feats":["Otel alımı ve tüm transferler dahil","En iyi 3 gün batımı lokasyonu","Opsiyonel: 200–300 yılkı atı","Poz sınırı yok — tüm fotoğraflar teslim","Seçilen 20 fotoğrafa profesyonel retuş","Instagram reel videosu dahil","Sınırsız kıyafet değişimi"]},
   {"time":"Albümlü","name":"Albümlü Hikâye","tag":"Elinizde tutacağınız anılar",
    "feats":["Gün doğumu veya gün batımı çekimi","Tüm fotoğraflar + 35 profesyonel retuş","1 adet 30×60 panoramik albüm","2 adet 15×30 aile albümü","1 adet 50×75 poster","1–2 dakikalık video klip","Instagram reel videosu dahil"]},
@@ -118,8 +118,8 @@ T = {
  "blog_kicker": "Blog",
 },
 "en": {
- "meta_title": "Cappadocia Wedding Photographer — Mavi Kaşif | Wife & Husband Elopement Team",
- "meta_desc": "Wedding, elopement and pre-wedding photography in Cappadocia by a local wife & husband team. Sunrise balloon sessions, printed album packages, all photos delivered. Message us on WhatsApp.",
+ "meta_title": "Cappadocia Wedding Photographer | Mavi Kaşif Wife & Husband Team",
+ "meta_desc": "Wedding, elopement and pre-wedding photography in Cappadocia by a local wife & husband team: sunrise balloons, printed albums, all photos delivered.",
  "wa_text": "Hello! I would like to ask about a wedding photoshoot in Cappadocia.",
  "nav": ["Packages","Experiences","Gallery","Reviews","About","FAQ"],
  "nav_cta": "Check Dates",
@@ -136,9 +136,9 @@ T = {
  "pk_popular": "Most Popular",
  "pk_cta": "Get a Quote",
  "packs": [
-  {"time":"Sunrise · 2–2.5 h","name":"Sunrise Session","tag":"Hundreds of balloons above you",
+  {"time":"Sunrise · 1–1.5 h","name":"Sunrise Session","tag":"Hundreds of balloons above you",
    "feats":["Hotel pick-up & all transfers included","Shoot with hot-air balloons at dawn","3 best sunrise locations","No pose limit — all photos delivered","20 professionally retouched picks","Instagram reel video included","Unlimited outfit changes"]},
-  {"time":"Sunset · 2–2.5 h","name":"Sunset Session","tag":"Golden hour over the valleys",
+  {"time":"Sunset · 1–1.5 h","name":"Sunset Session","tag":"Golden hour over the valleys",
    "feats":["Hotel pick-up & all transfers included","3 best sunset locations","Optional: 200–300 wild horses","No pose limit — all photos delivered","20 professionally retouched picks","Instagram reel video included","Unlimited outfit changes"]},
   {"time":"With Albums","name":"Album Story","tag":"Memories you can hold",
    "feats":["Sunrise or sunset session","All photos + 35 fine retouches","1 panoramic album (30×60 cm)","2 family albums (15×30 cm)","1 poster print (50×75 cm)","1–2 minute video clip","Instagram reel video included"]},
@@ -583,7 +583,10 @@ def blog_post(lang, p):
         {"@type":"ListItem","position":3,"name":i["title"],"item":canonical}]}
     ld = ('<script type="application/ld+json">' + json.dumps(art, ensure_ascii=False) + '</script>\n'
           '<script type="application/ld+json">' + json.dumps(crumbs, ensure_ascii=False) + '</script>')
-    head = blog_head(lang, i["title"] + " | Mavi Kaşif", i["desc"], canonical,
+    full_title = i["title"] + " | Mavi Kaşif"
+    if len(full_title) > 65:  # Google ~60 karakterde keser; uzun basliga marka eki eklenmez
+        full_title = i["title"]
+    head = blog_head(lang, full_title, i["desc"], canonical,
                      p["image"], blog_hreflangs(p["slug"]), ld)
     others = [q for q in POSTS if q["slug"] != p["slug"]][:3]
     more = (f'''<section class="blog-more"><div class="wrap">
