@@ -10,9 +10,9 @@ Kitle: Kapadokya'da **düğün / nişan / save-the-date** dış çekimi planlaya
 - [x] 2026-09-11 — **Kapadokya'da Düğün Dış Çekimi İçin Hangi Mevsim? Ay Ay Rehber** (`kapadokyada-dugun-dis-cekimi-icin-en-iyi-mevsim`)
 - [x] 2026-09-11 — **Gelinlikle Kapadokya Dış Çekimi: Pratikte Nasıl Oluyor?** (`gelinlikle-kapadokya-dis-cekimi-nasil-oluyor`)
 - [x] 2026-09-11 — **Nişan ve Save-the-Date Çekimi: Ne Zaman, Nasıl, Ne Giyerek?** (`nisan-ve-save-the-date-cekimi-rehberi`)
+- [x] 2026-09-22 — **Albümlü Hikâye Paketi Neden Var? Basılı Albüm ve Posterin Anlamı** (`albumlu-hikaye-paketi-neden-var`)
 
 ## Sırada
-- [ ] **Albümlü Hikâye paketi neden var?** — dijital çağda basılı albüm/poster niye önemli; 30×60 panoramik, 15×30 aile albümü, 50×75 poster gerçekte nasıl duruyor.
 - [ ] **Çekim günü saat saat** — 04:30 otel alımı → hangi vadi → kaç lokasyon → kahvaltıya dönüş. Beklenti yönetimi, "bu kadar erken kalkmaya değer mi" itirazını kırar.
 - [ ] **Kapadokya'ya nasıl gelinir, kaç gece kalınır?** — Kayseri/Nevşehir uçuşları, transfer, çekimi hangi güne koymalı. Planlama aşamasındaki çifti erken yakalar.
 - [ ] **Yağmur/rüzgâr olursa ne oluyor?** — B planı: fener ve halı dükkânları, mağara otel terasları. Dürüstlük güven veriyor.
